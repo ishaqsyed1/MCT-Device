@@ -1,0 +1,17 @@
+#ifndef CLOCK_H
+#define CLOCK_H
+#include <QTime>
+#include <QString>
+#include <QLCDNumber>
+class clock
+{
+public:
+    clock();
+    void showTime();
+     QString getTime();
+private:
+    QString text;
+    
+};
+
+#endif // CLOCK_H

@@ -1,0 +1,19 @@
+#include "clock.h"
+
+clock::clock()
+{
+
+    
+}
+QString clock::getTime(){
+    
+    return text;
+}
+void clock::showTime(){
+    QTime time = QTime::currentTime();
+     text = time.toString("hh:mm");
+    if ((time.second() % 2) == 0)
+          text[2] = ' ';
+   
+
+}
